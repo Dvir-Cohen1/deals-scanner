@@ -1,25 +1,32 @@
 import React from 'react'
 import robotImage from '../assets/card.png'
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 
 function HeroSection() {
      return (
-          <section className="mt-24 mx-auto max-w-screen-xl pb-12 px-4 items-center lg:flex md:px-8 ">
+          <section className="my-12 mx-auto container items-center lg:flex md:px-8 ">
                <div className="space-y-4 pr-24 flex-1 sm:text-center lg:text-left">
+               <p class="inline-flex items-center p-1 pr-2 text-white bg-gray-800 rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200"><span class="mx-4 text-sm">Tailwind CSS Version</span><span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-blue-600 rounded-full">v3.1.6</span></p>
                     <h1 className="text-white font-bold text-4xl xl:text-5xl">
-                         Get the BEST DEALS in one place
+                         Get the Best Deals in one place
                          <span className="text-blue-500"> Digital agency</span>
                     </h1>
                     <p className="text-gray-300 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
                          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
                     </p>
                     <div className="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start">
-                         <a href="javascript:void(0)" className="px-7 py-3 w-full bg-white hover:bg-slate-200 text-gray-800 text-center rounded-md shadow-md block sm:w-auto">
-                              Get started
-                         </a>
-                         <a href="javascript:void(0)" className="px-7 py-3 w-full bg-gray-700 text-gray-200 text-center rounded-md block sm:w-auto">
-                              Try it out
-                         </a>
+                         <button class="flex items-center px-4 py-2 font-medium tracking-wide text-gray-800 capitalize transition-colors duration-300 transform bg-white rounded-md hover:bg-gray-300 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                              <span class="mx-1">Get started</span>
+
+                         </button>
+                         <button class="flex items-center px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                              <span class="mx-1">Try it out</span>
+                              {/* <svg class="w-5 h-5 mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                   <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                              </svg> */}
+                              <ArrowRightAltIcon />
+                         </button>
                     </div>
                </div>
                <div className="flex-1 text-center mt-7 lg:mt-0 lg:ml-3">

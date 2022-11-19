@@ -7,13 +7,10 @@ function DealsOfToday() {
 
   const [todayDeals, setTodayDeals] = useState([])
 
-
   useEffect(() => {
     sendRequest()
       .then(setTodayDeals)
   }, [])
-  console.log(todayDeals)
-
 
   // todayDeals.deal_docs.map(item => console.log(item))
 
@@ -29,13 +26,7 @@ function DealsOfToday() {
           Send Request
         </button>
       </div>
-
-
       <DealsOfTodayItem DealsOfTodayItem={DealsOfTodayItem} />
-
-
-
-
     </section>
   )
 }
