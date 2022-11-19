@@ -1,4 +1,5 @@
 import React from 'react'
+import photo from '../assets/bill.png'
 
 function SubscriptionForm() {
      return (

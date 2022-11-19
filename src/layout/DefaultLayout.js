@@ -15,13 +15,12 @@ function DefaultLayout({ children }) {
                <Header />
                <main className='grow bg-gray-900 hero-section'>
                     <HeroSection />
-                    {children}
                </main>
                <Testimonials />
                <Explore />
                <Pricing />
                <main className='grow bg-gray-900 p-8'>
-               <SubscriptionForm />
+                    <SubscriptionForm />
 
                </main>
                <Footer />

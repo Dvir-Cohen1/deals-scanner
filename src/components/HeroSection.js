@@ -38,6 +38,7 @@ function HeroSection() {
                     {/* <img src={robotImage} alt="img" className="w-full mx-auto sm:w-10/12  lg:w-full" /> */}
                     <img src="https://merakiui.com/images/header-image.svg" alt=""></img>
                </div>
+
           </section>
      )
 }
