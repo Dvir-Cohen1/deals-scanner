@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import Explore from '../components/Explore'
+import Pricing from '../components/Pricing'
 
 import HeroSection from '../components/HeroSection'
 // import DealsOfToday from '../components/Products/DealsOfToday'
@@ -19,6 +20,7 @@ function DefaultLayout({ children }) {
                {/* <DealsOfToday /> */}
                <Testimonials />
                <Explore />
+               <Pricing />
                <Footer />
 
           </>

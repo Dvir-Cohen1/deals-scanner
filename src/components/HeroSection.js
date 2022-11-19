@@ -5,12 +5,17 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function HeroSection() {
      return (
-          <section className="my-12 mx-auto container items-center lg:flex md:px-8 ">
-               <div className="space-y-4 pr-24 flex-1 sm:text-center lg:text-left">
-               <p class="inline-flex items-center p-1 pr-2 text-white bg-gray-800 rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200"><span class="mx-4 text-sm">Tailwind CSS Version</span><span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-blue-600 rounded-full">v3.1.6</span></p>
-                    <h1 className="text-white font-bold text-4xl xl:text-5xl">
+          <section className="my-12 mx-auto container items-center lg:flex md:px-8">
+               <div className="space-y-4 flex-1 text-left sm:text-left md:text-left lg:text-left">
+                    <p class="inline-flex items-center p-1 pr-2 text-white bg-gray-800 rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200"><span class="mx-4 text-sm">Tailwind CSS Version</span><span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-blue-600 rounded-full">v3.1.6</span></p>
+                    <h1 className="text-white font-bold text-4xl xl:text-5xl xxs:text-left xs:text-left ms:text-left">
                          Get the Best Deals in one place
-                         <span className="text-blue-500"> Digital agency</span>
+                         <span className="text-blue-500 font-extrabold"> Digital agency</span>
+                         <div class="flex mx-auto mt-6">
+                              <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+                              <span class="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                              <span class="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+                         </div>
                     </h1>
                     <p className="text-gray-300 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
                          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
@@ -30,7 +35,8 @@ function HeroSection() {
                     </div>
                </div>
                <div className="flex-1 text-center mt-7 lg:mt-0 lg:ml-3">
-                    <img src={robotImage} alt="img" className="w-full mx-auto sm:w-10/12  lg:w-full" />
+                    {/* <img src={robotImage} alt="img" className="w-full mx-auto sm:w-10/12  lg:w-full" /> */}
+                    <img src="https://merakiui.com/images/header-image.svg" alt=""></img>
                </div>
           </section>
      )

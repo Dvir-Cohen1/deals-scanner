@@ -33,7 +33,7 @@ function Testimonials() {
                     </div>
 
                     <section class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-3">
-                         <div class="p-8 border rounded-lg dark:border-gray-700">
+                         <div class="p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500">
                               <p class="leading-loose text-gray-500 dark:text-gray-400">
                                    “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
                                    tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
@@ -67,7 +67,7 @@ function Testimonials() {
                               </div>
                          </div>
 
-                         <div class="p-8 border rounded-lg dark:border-gray-700">
+                         <div class="p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500">
                               <p class="leading-loose text-gray-500 dark:text-gray-400">
                                    “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
                                    tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
