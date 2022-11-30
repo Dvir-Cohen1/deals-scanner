@@ -5,10 +5,12 @@ import PageContainer from "../components/common/PageContainer";
 // import robotImage from "../assets/card.png";
 
 const About = () => {
+
+
   return (
-    <PageContainer>
-      <div className="flex justify-center flex-col w-1/2 mx-auto text-center my-12">
-      <p class="text-4xl">The quick brown fox ...</p>
+    <PageContainer textCenter>
+      <div className="flex justify-center flex-col w-1/2 mx-auto my-12">
+      <p className="text-4xl">The quick brown fox ...</p>
           Ab
         About lVeniam proident elit irure laborum ad esse tempor voluptate anim
         enim est. Esse veniam qui tempor nisi labore irure consectetur. Mollit

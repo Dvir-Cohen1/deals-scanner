@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../assets/bill.png'
+import photo from '../assets/images/bill.png'
 
 function SubscriptionForm() {
      return (

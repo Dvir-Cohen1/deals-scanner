@@ -17,5 +17,4 @@ export default async function getTodayDeals() {
      } catch (error) {
           console.log(error)
      }
-
 }
