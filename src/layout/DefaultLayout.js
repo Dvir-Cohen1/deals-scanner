@@ -1,32 +1,22 @@
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import Explore from '../components/Explore'
-import Pricing from '../components/Pricing'
-import SubscriptionForm from '../components/SubscriptionForm'
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
+import { useThemeContext } from "../context/themeContext";
 
-import HeroSection from '../components/HeroSection'
-// import DealsOfToday from '../components/Products/DealsOfToday'
-import Testimonials from '../components/Testimonials'
+function DefaultLayout() {
+  const isDarkMode = useThemeContext();
 
-function DefaultLayout({ children }) {
-     return (
-          <>
-               <Header />
-               <main className='grow bg-gray-900 hero-section'>
-                    <HeroSection />
-               </main>
-               <Testimonials />
-               <Explore />
-               <Pricing />
-               <main className='grow bg-gray-900 p-8'>
-                    <SubscriptionForm />
-
-               </main>
-               <Footer />
-
-          </>
-     )
+  return (
+    <div
+      className={"App flex flex-col space-between text-white " + (isDarkMode && " dark")}>
+      <Header />
+      <main className="grow bg-gray-900 w-full">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default DefaultLayout
+export default DefaultLayout;
