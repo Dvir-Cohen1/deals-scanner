@@ -9,7 +9,8 @@ const About = () => {
 
   return (
     <PageContainer textCenter>
-      <div className="flex justify-center flex-col w-1/2 mx-auto my-12">
+
+      <div className="about flex justify-center flex-col w-1/2 mx-auto my-12">
       <p className="text-4xl">The quick brown fox ...</p>
           Ab
         About lVeniam proident elit irure laborum ad esse tempor voluptate anim

@@ -15,7 +15,6 @@ export default function ThemeProvider({ children }) {
   const [darkMode, setDarkMode] = useState(false);
 
   const handleToggleTheme = () => {
-
     setDarkMode((prev) => !prev);
   };
 

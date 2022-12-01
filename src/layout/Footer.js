@@ -1,5 +1,6 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { useThemeContext } from "../context/themeContext";
 
 function Footer() {
 
@@ -16,8 +17,8 @@ function Footer() {
     },
     {
       id: "3",
-      href: "#",
-      name: "",
+      href: "/deals",
+      name: "deals",
     },
     {
       id: "4",
@@ -36,18 +37,21 @@ function Footer() {
       name: "Suuport",
     },
   ];
+const isDarkMode = useThemeContext();
+
+  const logo = (isDarkMode) ? 'https://www.floatui.com/images/logo.svg' : 'https://www.floatui.com/logo.svg';
 
   return (
-    <footer className="text-gray-500 bg-white dark:bg-slate-900 px-4 py-5 mx-auto w-full">
+    <footer className="text-gray-500 bg-white dark:bg-gray-900 px-4 py-5 mx-auto w-full">
       <img
         alt="footer"
-        src="https://www.floatui.com/logo.svg"
+        src={logo}
         className="w-32 sm:mx-auto mb-5"
       />
       <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
         {footerNavs.map((item) => (
           <li key={item.id} className=" hover:text-gray-800">
-            <a href={item.href}>{item.name}s</a>
+            <a href={item.href}>{item.name}</a>
           </li>
         ))}
       </ul>

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import FooterAlt from "./FooterAlt";
 import { Outlet } from "react-router-dom";
 import { useThemeContext } from "../context/themeContext";
 
