@@ -1,11 +1,12 @@
 import axios from "axios";
 
-const API_ENDPOINT = "https://amazon24.p.rapidapi.com/api/todaydeals";
+const END_POINT = `${process.env.REACT_APP_AMAZON_API_URL}/todaydeals`
+console.log(END_POINT)
 const options = {
   method: "GET",
-  url: API_ENDPOINT,
+  url: END_POINT,
   headers: {
-    "X-RapidAPI-Key": "545664b0b7mshcb8baf80f8b0419p13c615jsn61182e45873f",
+    "X-RapidAPI-Key": process.env.REACT_APP_X_RAPIDAPI_KEY,
     "X-RapidAPI-Host": "amazon24.p.rapidapi.com",
   },
 };
@@ -13,7 +14,6 @@ const options = {
 export default async function getTodayDeals() {
   try {
     const { data } = await axios.request(options);
-console.log(data)
     return await data;
   } catch (error) {
     console.log(error);

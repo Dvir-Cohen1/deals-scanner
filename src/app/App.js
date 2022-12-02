@@ -1,6 +1,7 @@
 import DefaultLayout from "../layout/DefaultLayout";
 import IndexPage from "../pages/IndexPage";
 import About from "../pages/About";
+import Login from "../pages/Login";
 import Deals from "../pages/Deals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,6 +13,7 @@ function App() {
             <Route index element={<IndexPage />} />
             <Route path="/deals" element={<Deals />} />
             <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -2,6 +2,7 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { useThemeContext } from "../context/themeContext";
 
+
 function Footer() {
 
   const footerNavs = [
@@ -39,10 +40,11 @@ function Footer() {
   ];
 const isDarkMode = useThemeContext();
 
-  const logo = (isDarkMode) ? 'https://www.floatui.com/images/logo.svg' : 'https://www.floatui.com/logo.svg';
+  const logo = (isDarkMode) ? 'https://www.floatui.com/logo.svg' : 'https://www.floatui.com/images/logo.svg';
 
   return (
-    <footer className="text-gray-500 bg-white dark:bg-gray-900 px-4 py-5 mx-auto w-full">
+    <footer className="text-gray-500 bg-gray-900 dark:bg-gray-900 px-4 py-5 mx-auto w-full">
+
       <img
         alt="footer"
         src={logo}

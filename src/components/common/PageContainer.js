@@ -3,7 +3,7 @@ import React from "react";
 const PageContainer = ({ children, textCenter }) => {
   return (
     <section
-      className={"mx-auto container" + (textCenter ? " text-center" : "")}
+      className={"mx-auto container max-w-screen-lg my-5" + (textCenter ? " text-center" : "")}
     >
       {children}
     </section>

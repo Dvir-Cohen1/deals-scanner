@@ -1,9 +1,8 @@
 import React from "react";
 import NavLinks from "./Navbar/NavLinks";
 import ThemeSwitchButton from "../components/ThemeSwitchButton";
-
+import { Link } from "react-router-dom";
 function Header() {
-
   return (
     <header>
       <nav className="items-center pt-5 px-4 mx-auto sm:px-8 sm:flex sm:space-x-6">
@@ -46,9 +45,10 @@ function Header() {
             </div>
           </li>
           <li>
-            <a href="/" className="flex items-center text-gray-200">
-              Log In
-              <svg
+
+            <Link to='/login' className="flex items-center text-gray-200">
+            Log In
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 ml-2"
                 viewBox="0 0 20 20"
@@ -60,12 +60,12 @@ function Header() {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            
+            </Link>
           </li>
         </ul>
       </nav>
     </header>
   );
 }
-
 export default Header;

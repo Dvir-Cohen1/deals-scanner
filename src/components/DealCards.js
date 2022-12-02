@@ -3,17 +3,18 @@ import { useDealsContext } from "../context/todayDealsContext";
 import Loader from "./common/Loader";
 import Button from "./common/Button";
 
+
 const DealCard = () => {
   const deals = useDealsContext();
   return (
-    <section className="my-12 mx-auto px-4 max-w-screen-xl flex justify-center">
+    <section className="mb-10 mx-auto flex justify-center">
       {deals.deal_docs ? (
-        <div className="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {deals.deal_docs.map((items, key) => (
             <article
-              className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm
-       bg-slate-100 hover:bg-slate-300 w-full dark:bg-gray-800 dark:hover:bg-gray-700 "
-              key={key}
+            className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm
+            bg-slate-100 hover:bg-slate-300 w-full dark:bg-gray-800 dark:hover:bg-gray-700 "
+            key={key}
             >
                 <img
                   src={items.deal_main_image_url}

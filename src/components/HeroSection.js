@@ -1,6 +1,5 @@
 import React from "react";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-
 function HeroSection() {
   return (
     <section className="grow bg-gray-900  p-8 pink:bg-pink-600 hero-section">
