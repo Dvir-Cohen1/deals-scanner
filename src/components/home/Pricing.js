@@ -2,7 +2,7 @@ import React from 'react'
 
 function Pricing() {
     return (
-        <section className="p-24 bg-white dark:bg-gray-900" id='Pricing'>
+        <section className="p-24 bg-white dark:bg-gray-400" id='Pricing'>
             <div className="container px-6 py-8 mx-auto">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <div>

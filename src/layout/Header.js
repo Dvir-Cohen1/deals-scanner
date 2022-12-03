@@ -1,14 +1,20 @@
 import React from "react";
 import NavLinks from "./Navbar/NavLinks";
 import ThemeSwitchButton from "../components/ThemeSwitchButton";
+import { useThemeContext } from "../context/themeContext";
 import { Link } from "react-router-dom";
+
+
 function Header() {
+  const isDarkMode = useThemeContext();
+  const logo = (isDarkMode) ? 'https://www.floatui.com/logo.svg' : 'https://www.floatui.com/images/logo.svg';
+  
   return (
     <header className="bg-gray-900 dark:bg-slate-100">
       <nav className="items-center pt-5 px-4 mx-auto sm:px-8 sm:flex sm:space-x-6">
         <a href="/">
           <img
-            src="https://www.floatui.com/images/logo.svg"
+            src={logo}
             width={120}
             height={50}
             alt="Float UI logo"
@@ -46,7 +52,7 @@ function Header() {
           </li>
           <li>
 
-            <Link to='/login' className="flex items-center text-gray-200">
+            <Link to='/login' className="flex items-center dark:text-gray-600 dark:hover:text-gray-500 hover:text-gray-400">
             Log In
             <svg
                 xmlns="http://www.w3.org/2000/svg"

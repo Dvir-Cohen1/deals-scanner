@@ -1,13 +1,14 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 
 const navLinks = [
   { path: "/", lable: "Home" },
-  { path: "/#Customers", lable: "Customers" },
-  { path: "/#Contact", lable: "Contact" },
-  { path: "/Deals", lable: "Deals" },
-  { path: "/#Pricing", lable: "Pricing" },
-  { path: "/about", lable: "About" },
+  { path: "/#Customers", lable: "Customers", icon:"" },
+  { path: "/#Contact", lable: "Contact", icon: "" },
+  { path: "/Deals", lable: "Deals", icon: <LocalGroceryStoreIcon /> },
+  { path: "/#Pricing", lable: "Pricing", icon: "" },
+  { path: "/about", lable: "About", icon: "" },
 ];
 
 const NavLinks = () => {
@@ -21,13 +22,13 @@ const NavLinks = () => {
             to={item.path}
             key={index}
             className={
-              "px-2.5 py-2 text-white transition-colors duration-150 transform rounded-lg dark:text-gray-600  hover:bg-blue-600 active:bg-blue-400 dark:hover:bg-gray-400 md:mx-2" +
+              "px-2.5 py-2 text-white transition-colors duration-150 transform rounded-lg dark:text-gray-600  hover:bg-blue-600 active:bg-blue-400 dark:hover:bg-gray-200 md:mx-2" +
               (location.pathname === item.path
-                ? " border-b-2 border-blue-400 bg-blue-600 dark:bg-gray-400"
+                ? " border-b-2 border-blue-400 bg-blue-600 dark:bg-gray-200 dark:border-gray-500"
                 : "")
             }
           >
-            {item.lable}
+            {item.icon} {item.lable}
           </Link>
         );
       })}

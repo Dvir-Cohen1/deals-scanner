@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 // import getTodayDeals from "../services/TodayDealsAPI";
-import  {getTodayDeals}  from "../services/TodayDealsAPI";
+import { getTodayDeals } from "../services/TodayDealsAPI";
 const DealsContext = createContext();
 
 export function useDealsContext() {
@@ -12,11 +12,21 @@ export default function DealsProvider({ children }) {
 
   useEffect(() => {
     let mounted = true;
-    getTodayDeals().then((items) => {
+
+    async function fetch() {
+      const res = await getTodayDeals();
       if (mounted) {
-        setDeals(items);
+        setDeals(res);
       }
-    });
+      return res
+    }
+    fetch()
+    // getTodayDeals().then((items) => {
+    //   if (mounted) {
+    //     setDeals(items);
+    //   }
+    // });
+
     return () => (mounted = false);
   }, [deals]);
 

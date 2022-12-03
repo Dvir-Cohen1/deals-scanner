@@ -7,16 +7,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<DefaultLayout />}>
-            <Route index element={<IndexPage />} />
-            <Route path="/deals" element={<Deals />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/login" element={<Login />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DefaultLayout />}>
+          <Route index element={<IndexPage />} />
+          <Route path="/deals" element={<Deals />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+        </Route>
+        <Route path="/*" element={<p>Not Found!</p>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

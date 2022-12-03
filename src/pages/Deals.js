@@ -1,37 +1,46 @@
-import React from "react";
-import DealsProvider from "../context/todayDealsContext";
+import React, { useContext } from "react";
+
 import amazonImg from "../assets/images/amazon.png";
-import {getAmazonCategory} from '../services/TodayDealsAPI'
-// import DealCards from "../components/Products/DealCards";
-// import ProductCard from "../components/Products/ProductCard";
+import { getAmazonProduct } from "../services/TodayDealsAPI";
 
 import {
   DealCards,
   ProductCard,
-  HorizontalLine,
   PageContainer,
   Image,
+  HeadingLarge,
+  Tabs,
+  SkeletonLoader,
+  Button,
+  Dialog,
+
 } from "../components/index";
 
+import { useDealsContext } from "../context/todayDealsContext";
+
 const Deals = () => {
+  const { products_docs } = useDealsContext();
+
   return (
     <PageContainer>
-      <DealsProvider>
-        <div className="columns-2">
-          <div>
-            <p className="text-4xl">Products </p>
-            <HorizontalLine />
-          </div>
-          <div className="float-right">
-            Today's deals from <Image width={100} src={amazonImg} />
-          </div>
-        </div>
-        <button onClick={() => getAmazonCategory()}>Get All Categories</button>
-        <ProductCard />
-        <p className="text-4xl">Deals </p>
-        <HorizontalLine />
-        <DealCards />
-      </DealsProvider>
+      <Button onClick={()=>getAmazonProduct()}></Button>
+      <Image width={70} src={amazonImg} />
+      <div className="columns-2">
+        <HeadingLarge>Today's Deals</HeadingLarge>
+        <Dialog />
+        <Tabs />
+        {/* <button onClick={() => getAmazonCategory()}>Get All Categories</button> */}
+      </div>
+      {products_docs ? (
+        <>
+          <ProductCard />
+          <HeadingLarge>Products</HeadingLarge>
+          <DealCards />
+        </>
+      ) : (
+        <SkeletonLoader/>
+
+      )}
     </PageContainer>
   );
 };
