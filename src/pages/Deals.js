@@ -1,11 +1,17 @@
 import React from "react";
-import PageContainer from "../components/common/PageContainer";
 import DealsProvider from "../context/todayDealsContext";
-import DealCards from "../components/DealCards";
-import Image from "../components/common/Image";
 import amazonImg from "../assets/images/amazon.png";
-import ProductCard from "../components/Products/ProductCard";
-import HorizontalLine from "../components/common/HorizontalLine";
+import {getAmazonCategory} from '../services/TodayDealsAPI'
+// import DealCards from "../components/Products/DealCards";
+// import ProductCard from "../components/Products/ProductCard";
+
+import {
+  DealCards,
+  ProductCard,
+  HorizontalLine,
+  PageContainer,
+  Image,
+} from "../components/index";
 
 const Deals = () => {
   return (
@@ -20,6 +26,7 @@ const Deals = () => {
             Today's deals from <Image width={100} src={amazonImg} />
           </div>
         </div>
+        <button onClick={() => getAmazonCategory()}>Get All Categories</button>
         <ProductCard />
         <p className="text-4xl">Deals </p>
         <HorizontalLine />

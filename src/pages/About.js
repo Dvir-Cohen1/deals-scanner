@@ -1,9 +1,6 @@
 import React from "react";
 
-import PageContainer from "../components/common/PageContainer";
-import OurTeam from "../components/OurTeam";
-// import Robot from "../assets/robot.png";
-// import robotImage from "../assets/card.png";
+import { PageContainer, OurTeam } from "../components/index";
 
 const About = () => {
   return (

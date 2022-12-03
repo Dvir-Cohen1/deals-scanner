@@ -1,9 +1,12 @@
 import React from "react";
-import Explore from "../components/Explore";
-import Pricing from "../components/Pricing";
-import SubscriptionForm from "../components/SubscriptionForm";
-import HeroSection from "../components/HeroSection";
-import Testimonials from "../components/Testimonials";
+
+import {
+  Explore,
+  Pricing,
+  SubscriptionForm,
+  HeroSection,
+  Testimonials,
+} from "../components/index";
 
 const IndexPage = () => {
   return (

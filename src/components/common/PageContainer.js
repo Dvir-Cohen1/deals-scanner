@@ -4,7 +4,7 @@ const PageContainer = ({ children, textCenter, ...props }) => {
   return (
     <section
       className={
-        "mx-auto container max-w-screen-lg my-5" +
+        "mx-auto container max-w-screen-xl w-2/3 my-5" +
         (textCenter ? " text-center" : "")
       }
       {...props}

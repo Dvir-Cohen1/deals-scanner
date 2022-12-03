@@ -43,7 +43,7 @@ const isDarkMode = useThemeContext();
   const logo = (isDarkMode) ? 'https://www.floatui.com/logo.svg' : 'https://www.floatui.com/images/logo.svg';
 
   return (
-    <footer className="text-gray-500 bg-gray-900 dark:bg-gray-900 px-4 py-5 mx-auto w-full">
+    <footer className="text-gray-500 bg-gray-900 dark:bg-slate-100 px-4 py-5 mx-auto w-full">
 
       <img
         alt="footer"

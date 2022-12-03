@@ -21,9 +21,9 @@ const NavLinks = () => {
             to={item.path}
             key={index}
             className={
-              "px-2.5 py-2 text-white transition-colors duration-150 transform rounded-lg dark:text-gray-200  hover:bg-blue-600 active:bg-blue-400 dark:hover:bg-gray-700 md:mx-2" +
+              "px-2.5 py-2 text-white transition-colors duration-150 transform rounded-lg dark:text-gray-600  hover:bg-blue-600 active:bg-blue-400 dark:hover:bg-gray-400 md:mx-2" +
               (location.pathname === item.path
-                ? " border-b-2 border-blue-400 bg-blue-600"
+                ? " border-b-2 border-blue-400 bg-blue-600 dark:bg-gray-400"
                 : "")
             }
           >

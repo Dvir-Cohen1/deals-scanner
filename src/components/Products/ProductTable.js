@@ -65,7 +65,7 @@ const rows = [
 ];
 
 const ProductTable = () => {
-  const {products_docs} = useDealsContext();
+  // const {products_docs} = useDealsContext();
 //   console.log(deals)
   return (
     <Box sx={{ height: 400, width: "100%" }}>

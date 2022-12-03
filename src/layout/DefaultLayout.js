@@ -11,7 +11,7 @@ function DefaultLayout() {
     <div
       className={"App flex flex-col space-between text-white " + (isDarkMode && " dark")}>
       <Header />
-      <main className="grow bg-gray-900 w-full">
+      <main className="grow bg-gray-900 dark:bg-slate-100 w-full">
         <Outlet />
       </main>
       <Footer />

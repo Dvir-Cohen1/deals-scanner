@@ -4,7 +4,7 @@ import ThemeSwitchButton from "../components/ThemeSwitchButton";
 import { Link } from "react-router-dom";
 function Header() {
   return (
-    <header>
+    <header className="bg-gray-900 dark:bg-slate-100">
       <nav className="items-center pt-5 px-4 mx-auto sm:px-8 sm:flex sm:space-x-6">
         <a href="/">
           <img
@@ -39,7 +39,7 @@ function Header() {
 
               <input
                 type="text"
-                className="bg-transparent w-full py-2 pl-10 pr-4 text-gray-700 border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-500"
+                className="bg-transparent w-full py-2 pl-10 pr-4 text-gray-700 border rounded-lg dark:bg-slate-100 dark:text-gray-300 border-gray-600 dark:border-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-500"
                 placeholder="Search"
               />
             </div>
