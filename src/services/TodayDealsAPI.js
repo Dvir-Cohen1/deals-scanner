@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const END_POINT = `${process.env.REACT_APP_AMAZON_API_URL}/todaydeals`
-console.log(END_POINT)
+const END_POINT = `${process.env.REACT_APP_AMAZON_API_URL}/todaydeals`;
+console.log(END_POINT);
 const options = {
   method: "GET",
   url: END_POINT,

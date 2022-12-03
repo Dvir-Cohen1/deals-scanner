@@ -4,18 +4,25 @@ import DealsProvider from "../context/todayDealsContext";
 import DealCards from "../components/DealCards";
 import Image from "../components/common/Image";
 import amazonImg from "../assets/images/amazon.png";
+import ProductCard from "../components/Products/ProductCard";
+import HorizontalLine from "../components/common/HorizontalLine";
 
 const Deals = () => {
   return (
     <PageContainer>
       <DealsProvider>
-        <p className="text-4xl">Deals </p>
-        <div className="flex mx-auto my-6">
-          <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-          <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
-          <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+        <div className="columns-2">
+          <div>
+            <p className="text-4xl">Products </p>
+            <HorizontalLine />
+          </div>
+          <div className="float-right">
+            Today's deals from <Image width={100} src={amazonImg} />
+          </div>
         </div>
-        Today's deals from <Image width={100} src={amazonImg} />
+        <ProductCard />
+        <p className="text-4xl">Deals </p>
+        <HorizontalLine />
         <DealCards />
       </DealsProvider>
     </PageContainer>
