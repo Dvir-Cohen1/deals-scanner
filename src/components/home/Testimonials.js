@@ -1,6 +1,6 @@
 import React from "react";
 import {styles} from '../../assets/css/style'
-
+import {HorizontalLine} from '../index'
 function Testimonials() {
   return (
     <section className="bg-white dark:bg-gray-600">
@@ -11,11 +11,8 @@ function Testimonials() {
               What our clients are saying
             </h1>
 
-            <div className="flex mx-auto mt-6">
-              <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
-            </div>
+            <HorizontalLine/>
+            
           </div>
 
           <div className="flex justify-between mt-8 md:mt-0">

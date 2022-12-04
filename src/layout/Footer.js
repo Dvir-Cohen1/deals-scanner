@@ -1,6 +1,7 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { useThemeContext } from "../context/themeContext";
+import {styles} from '../assets/css/style'
 
 
 function Footer() {
@@ -43,7 +44,7 @@ const isDarkMode = useThemeContext();
   const logo = (isDarkMode) ? 'https://www.floatui.com/logo.svg' : 'https://www.floatui.com/images/logo.svg';
 
   return (
-    <footer className="text-gray-500 bg-gray-900 dark:bg-slate-100 px-4 py-5 mx-auto w-full">
+    <footer className={"px-4 py-5 mx-auto w-full " + styles.defaultBackground}>
 
       <img
         alt="footer"
@@ -52,18 +53,18 @@ const isDarkMode = useThemeContext();
       />
       <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
         {footerNavs.map((item) => (
-          <li key={item.id} className=" hover:text-gray-800">
+          <li key={item.id} className="dark:text-gray-600 hover:text-gray-800 dark:hover:text-blue-500">
             <a href={item.href}>{item.name}</a>
           </li>
         ))}
       </ul>
-      <div className="mt-8 items-center justify-between sm:flex">
+      <div className="mt-8 items-center justify-between sm:flex dark:text-gray-600">
         <div className="mt-4 sm:mt-0">
           &copy; 2022 Dvir Cohen DealsScanner All rights reserved.
         </div>
         <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">
-            <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+            <li className={"w-10 h-10 border rounded-full flex items-center justify-center " + styles.transitionMoveUp}>
               <a href="/">
                 <svg
                   className="svg-icon w-6 h-6 text-blue-400"
@@ -77,7 +78,7 @@ const isDarkMode = useThemeContext();
               </a>
             </li>
 
-            <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+            <li className={"w-10 h-10 border rounded-full flex items-center justify-center " + styles.transitionMoveUp}>
               <a href="/">
                 <svg
                   className="svg-icon w-6 h-6 text-blue-700"
@@ -91,7 +92,7 @@ const isDarkMode = useThemeContext();
               </a>
             </li>
 
-            <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+            <li className={"w-10 h-10 border rounded-full flex items-center justify-center " + styles.transitionMoveUp}>
               <a href="/">
                 <svg
                   className="svg-icon w-6 h-6 text-blue-500"
@@ -105,7 +106,7 @@ const isDarkMode = useThemeContext();
               </a>
             </li>
 
-            <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+            <li className={"w-10 h-10 border rounded-full flex items-center justify-center " + styles.transitionMoveUp}>
               <a
                 rel="noreferrer"
                 target={"_blank"}

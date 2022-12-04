@@ -5,7 +5,7 @@ const Card = ({ children, imgUrl, imgAlt, buttonUrl, buttonLable }) => {
   return (
     <article
       className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm
-           bg-slate-100 hover:bg-gray-300 w-full dark:bg-gray-200 dark:hover:bg-gray-300 flex flex-col justify-between "
+           bg-slate-100 hover:bg-gray-300 w-full dark:bg-white dark:hover:bg-gray-100 flex flex-col justify-between "
     >
       <img
         src={imgUrl}
@@ -14,7 +14,7 @@ const Card = ({ children, imgUrl, imgAlt, buttonUrl, buttonLable }) => {
         className="w-full rounded-t-md h-full"
       />
       <div className="ml-3 mt-2 mb-auto">{children}</div>
-      <div className="text-center mb-5">
+      <div className="text-center my-5">
         <Button>
           <a href={buttonUrl}>{buttonLable || "Click"}</a>
         </Button>

@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 import { useThemeContext } from "../context/themeContext";
 import DealsProvider from "../context/todayDealsContext";
+import {styles} from '../assets/css/style'
 
 function DefaultLayout() {
   const isDarkMode = useThemeContext();
@@ -11,7 +12,7 @@ function DefaultLayout() {
   return (
     <div className={"App flex flex-col space-between text-white " + (isDarkMode && " dark")}>
       <Header />
-      <main className="grow bg-gray-900 dark:bg-slate-100 w-full">
+      <main className={"grow w-full " + styles.defaultBackground}>
         <DealsProvider>
           <Outlet />
         </DealsProvider>

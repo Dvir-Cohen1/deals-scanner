@@ -1,8 +1,10 @@
 import React from "react";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import {styles} from '../../assets/css/style'
+import {HorizontalLine} from "../index";
 function HeroSection() {
   return (
-    <section className="grow bg-gray-900 dark:bg-gray-200  p-8 pink:bg-pink-600 hero-section">
+    <section className={"grow  " + styles.defaultBackground}>
       <div className="mx-auto container items-center lg:flex md:px-8">
         <div className="py-56 space-y-4 flex-1 text-left sm:text-left md:text-left lg:text-left">
           <p className="inline-flex items-center p-1 pr-2 text-white bg-gray-800 rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
@@ -11,19 +13,15 @@ function HeroSection() {
               v3.1.6
             </span>
           </p>
-          <h1 className="text-white font-bold text-4xl xl:text-5xl xxs:text-left xs:text-left ms:text-left">
+          <h1 className="text-white dark:text-gray-600 font-bold text-4xl xl:text-5xl xxs:text-left xs:text-left ms:text-left">
             Get the Best Deals in one place
             <span className="text-blue-500 font-extrabold">
               {" "}
               Digital agency
             </span>
-            <div className="flex mx-auto mt-6">
-              <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
-            </div>
+            <HorizontalLine/>
           </h1>
-          <p className="text-gray-300 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
+          <p className="text-gray-300 dark:text-gray-600 font-medium max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum
