@@ -43,7 +43,7 @@ const SkeletonLoader = () => {
   const SkeletonCards = generateSkeletonCards(10);
   return (
     <Stack spacing={2}>
-      <Skeleton variant="text" sx={{ fontSize: "1rem", bgcolor: "#0d121f" }} />
+      <Skeleton variant="text" sx={{ fontSize: "1rem", bgcolor: "#0d121f", marginTop:'10px' }} />
       <div className="flex flex-wrap justify-between flex-row gap-7">
         {SkeletonCards.map((item, indexId) => {
           return <span key={indexId}>{item.component}</span>;
