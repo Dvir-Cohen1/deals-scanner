@@ -14,13 +14,13 @@ const tabsItems = [
 
 const Tabs = () => {
   return (
-    <div class="flex items-center justify-end ">
-      <div class="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
+    <div className="flex items-center justify-end ">
+      <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
         {tabsItems.map((item, indexId) => {
           return (
             <button
               key={indexId}
-              class={
+              className={
                 " text-sm font-medium text-blue-600 capitalize transition-colors duration-300 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-5 px-5 py-3 active:bg-blue-700 " +
                 item.customClass
               }

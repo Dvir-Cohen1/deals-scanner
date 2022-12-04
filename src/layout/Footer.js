@@ -117,7 +117,7 @@ const isDarkMode = useThemeContext();
           </ul>
         </div>
       </div>
-      <style jsx>{`
+      <style jsx="true">{`
         .svg-icon path,
         .svg-icon polygon,
         .svg-icon rect {

@@ -15,7 +15,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
         </Route>
-        <Route path="/*" element={<p>Not Found!</p>} />
+        <Route path="/*" element={<div>Not Found!</div>} />
       </Routes>
     </BrowserRouter>
   );

@@ -9,12 +9,13 @@ const ProductCard = () => {
     <section className="mb-10 mx-auto flex justify-center">
       {products_docs ? (
         <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {products_docs.map((items, key) => (
+          {products_docs.map((items, indexId) => (
             <Card
               imgUrl={items.product_main_image_url}
               imgAlt={items.title}
               buttonUrl={items.product_detail_url}
               buttonLable={"Buy Now"}
+              key={indexId}
             >
               <span className="block text-gray-900">{items.product_title}</span>
               <span className="block text-gray-400 text-lg">

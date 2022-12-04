@@ -9,12 +9,13 @@ const DealCard = () => {
     <section className="mb-10 mx-auto flex justify-center">
       {deal_docs ? (
         <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {deal_docs.map((items, key) => (
+          {deal_docs.map((items, indexId) => (
             <Card
               imgUrl={items.deal_main_image_url}
               imgAlt={items.title}
-              buttonUrl={items.product_detail_url}
+              buttonUrl={items.deal_details_url}
               buttonLable={"Buy Now"}
+              key={indexId}
             >
               <span className="block text-gray-900">{items.deal_title}</span>
               <span className="block text-gray-400 text-sm">
@@ -38,7 +39,7 @@ const DealCard = () => {
           ))}
         </div>
       ) : (
-        ''
+        ""
       )}
     </section>
   );

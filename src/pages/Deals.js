@@ -23,11 +23,10 @@ const Deals = () => {
 
   return (
     <PageContainer>
-      <Button onClick={()=>getAmazonProduct()}></Button>
+
       <Image width={70} src={amazonImg} />
       <div className="columns-2">
         <HeadingLarge>Today's Deals</HeadingLarge>
-        <Dialog />
         <Tabs />
         {/* <button onClick={() => getAmazonCategory()}>Get All Categories</button> */}
       </div>

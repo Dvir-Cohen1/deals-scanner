@@ -8,6 +8,8 @@ export const styles = {
      flexStart: "flex justify-center items-start",
 
      flexColCenter: "flex flex-col items-center justify-center",
+
+     skeletonsBackground: '#0d121f',
    
      paddingX: "sm:px-16 px-6",
      paddingY: "sm:py-16 py-6",

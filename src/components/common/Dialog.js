@@ -29,7 +29,9 @@ export default function FullScreenDialog() {
 
   return (
     <div>
-
+      <Button variant="outlined" onClick={handleClickOpen}>
+        Open full-screen dialog
+      </Button>
       <Dialog
         fullScreen
         open={open}

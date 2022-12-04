@@ -1,7 +1,7 @@
 import axios from "axios";
 
 function generateCustomOptionObject(method, url) {
-  const option = {
+  const options = {
     method,
     url: `${process.env.REACT_APP_AMAZON_API_URL}/${url}`,
     params: { country: "US" },
@@ -11,7 +11,7 @@ function generateCustomOptionObject(method, url) {
     },
   };
 
-  return option;
+  return options;
 }
 
 export async function getTodayDeals() {
@@ -44,5 +44,3 @@ export async function getAmazonProduct(productId) {
     console.log(error);
   }
 }
-
-// getAmazonCategory()

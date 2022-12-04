@@ -1,6 +1,7 @@
 import React from "react";
 import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
+import {styles} from '../../assets/css/style'
 
 const skeletonCard = [
   {
@@ -8,19 +9,19 @@ const skeletonCard = [
       <div className="flex gap-5 flex-col flex-wrap">
         <Skeleton
           variant="circular"
-          sx={{ bgcolor: "#0d121f" }}
+          sx={{ bgcolor: styles.skeletonsBackground }}
           width={40}
           height={40}
         />
         <Skeleton
           variant="rectangular"
-          sx={{ bgcolor: "#0d121f" }}
+          sx={{ bgcolor: styles.skeletonsBackground }}
           width={210}
           height={60}
         />
         <Skeleton
           variant="rounded"
-          sx={{ bgcolor: "#0d121f" }}
+          sx={{ bgcolor: styles.skeletonsBackground }}
           width={210}
           height={60}
         />
