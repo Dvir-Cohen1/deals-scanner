@@ -1,8 +1,9 @@
 import React from "react";
+import {styles} from '../../assets/css/style'
 
 function Testimonials() {
   return (
-    <section className="bg-white dark:bg-gray-900 mt-5 mb-20">
+    <section className="bg-white dark:bg-gray-600">
       <div className="container px-6 py-10 mx-auto">
         <div className="mt-6 md:flex md:items-center md:justify-between">
           <div>
@@ -55,7 +56,7 @@ function Testimonials() {
         </div>
 
         <section className="pb-10 grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-3">
-          <div className="p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500">
+          <div className={`p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500 ${styles.transitionMoveUp}`}>
             <p className="leading-loose text-gray-500 dark:text-gray-400">
               “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
               quibusdam ducimus libero ad tempora doloribus expedita laborum
@@ -81,7 +82,7 @@ function Testimonials() {
             </div>
           </div>
 
-          <div className="p-8 bg-blue-500 border border-transparent rounded-lg dark:bg-blue-600">
+          <div className={`p-8 bg-blue-500 border border-transparent rounded-lg dark:bg-blue-600 ${styles.transitionMoveUp}`}>
             <p className="leading-loose text-white">
               “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
               quibusdam ducimus libero ad tempora doloribus expedita laborum
@@ -105,7 +106,7 @@ function Testimonials() {
             </div>
           </div>
 
-          <div className="p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500">
+          <div className={`p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500 ${styles.transitionMoveUp}`}>
             <p className="leading-loose text-gray-500 dark:text-gray-400">
               “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
               quibusdam ducimus libero ad tempora doloribus expedita laborum

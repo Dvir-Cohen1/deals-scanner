@@ -1,11 +1,9 @@
 import React from "react";
-
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-
 function HeroSection() {
   return (
-    <section className="grow bg-gray-900  p-8 pink:bg-pink-600 hero-section">
-      <div className="mb-12 mx-auto container items-center lg:flex md:px-8">
+    <section className="grow bg-gray-900 dark:bg-gray-200  p-8 pink:bg-pink-600 hero-section">
+      <div className="mx-auto container items-center lg:flex md:px-8">
         <div className="py-56 space-y-4 flex-1 text-left sm:text-left md:text-left lg:text-left">
           <p className="inline-flex items-center p-1 pr-2 text-white bg-gray-800 rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
             <span className="mx-4 text-sm">Tailwind CSS Version</span>

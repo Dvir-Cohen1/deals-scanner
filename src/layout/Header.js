@@ -1,15 +1,20 @@
 import React from "react";
 import NavLinks from "./Navbar/NavLinks";
 import ThemeSwitchButton from "../components/ThemeSwitchButton";
+import { useThemeContext } from "../context/themeContext";
+import { Link } from "react-router-dom";
+
 
 function Header() {
-
+  const isDarkMode = useThemeContext();
+  const logo = (isDarkMode) ? 'https://www.floatui.com/logo.svg' : 'https://www.floatui.com/images/logo.svg';
+  
   return (
-    <header>
+    <header className="bg-gray-900 dark:bg-slate-100">
       <nav className="items-center pt-5 px-4 mx-auto sm:px-8 sm:flex sm:space-x-6">
         <a href="/">
           <img
-            src="https://www.floatui.com/images/logo.svg"
+            src={logo}
             width={120}
             height={50}
             alt="Float UI logo"
@@ -40,15 +45,16 @@ function Header() {
 
               <input
                 type="text"
-                className="bg-transparent w-full py-2 pl-10 pr-4 text-gray-700 border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-500"
+                className="bg-transparent w-full py-2 pl-10 pr-4 text-gray-700 border rounded-lg dark:bg-slate-100 dark:text-gray-300 border-gray-600 dark:border-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-500"
                 placeholder="Search"
               />
             </div>
           </li>
           <li>
-            <a href="/" className="flex items-center text-gray-200">
-              Log In
-              <svg
+
+            <Link to='/login' className="flex items-center dark:text-gray-600 dark:hover:text-gray-500 hover:text-gray-400">
+            Log In
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 ml-2"
                 viewBox="0 0 20 20"
@@ -60,12 +66,12 @@ function Header() {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            
+            </Link>
           </li>
         </ul>
       </nav>
     </header>
   );
 }
-
 export default Header;

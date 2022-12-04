@@ -1,20 +1,46 @@
-import axios from 'axios';
+import axios from "axios";
 
-const API_ENDPOINT = 'https://amazon24.p.rapidapi.com/api/todaydeals'
-const options = {
-     method: 'GET',
-     url: API_ENDPOINT,
-     headers: {
-          'X-RapidAPI-Key': '545664b0b7mshcb8baf80f8b0419p13c615jsn61182e45873f',
-          'X-RapidAPI-Host': 'amazon24.p.rapidapi.com'
-     }
-};
+function generateCustomOptionObject(method, url) {
+  const options = {
+    method,
+    url: `${process.env.REACT_APP_AMAZON_API_URL}/${url}`,
+    params: { country: "US" },
+    headers: {
+      "X-RapidAPI-Key": process.env.REACT_APP_X_RAPIDAPI_KEY,
+      "X-RapidAPI-Host": "amazon24.p.rapidapi.com",
+    },
+  };
 
-export default async function getTodayDeals() {
-     try {
-          const { data } = await axios.request(options);
-          return data
-     } catch (error) {
-          console.log(error)
-     }
+  return options;
+}
+
+export async function getTodayDeals() {
+  try {
+    const options = generateCustomOptionObject("GET", "todaydeals");
+    const { data } = await axios.request(options);
+    return await data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function getAmazonCategory() {
+  try {
+    const options = generateCustomOptionObject("GET", "category");
+    const { data } = await axios.request(options);
+    return await data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function getAmazonProduct(productId) {
+  try {
+    const options = generateCustomOptionObject("GET", `product/${productId}`);
+    const { data } = await axios.request(options);
+    console.log(data);
+    return await data;
+  } catch (error) {
+    console.log(error);
+  }
 }
