@@ -3,11 +3,11 @@ import IndexPage from "../pages/IndexPage";
 import About from "../pages/About";
 import Login from "../pages/Login";
 import Deals from "../pages/Deals";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter , Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<DefaultLayout />}>
           <Route index element={<IndexPage />} />
@@ -17,7 +17,7 @@ function App() {
         </Route>
         <Route path="/*" element={<div>Not Found!</div>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
