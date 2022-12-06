@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Dvir-Cohen1/deals-scanner.git/static/css/main.b29173a9.css",
+    "main.js": "/Dvir-Cohen1/deals-scanner.git/static/js/main.2206f5d2.js",
+    "static/media/pattren.jpg": "/Dvir-Cohen1/deals-scanner.git/static/media/pattren.f16c95646266acc5f0c0.jpg",
+    "static/media/bestBuy.png": "/Dvir-Cohen1/deals-scanner.git/static/media/bestBuy.3f2a177cac4599197a34.png",
+    "static/media/amazon.png": "/Dvir-Cohen1/deals-scanner.git/static/media/amazon.1c9be0b254d3ff1dc9e9.png",
+    "static/media/ebay.png": "/Dvir-Cohen1/deals-scanner.git/static/media/ebay.260297e909b4fccbac7b.png",
+    "static/media/taobao.svg": "/Dvir-Cohen1/deals-scanner.git/static/media/taobao.c2f3bbb7187910b02b3e59a8464699d2.svg",
+    "index.html": "/Dvir-Cohen1/deals-scanner.git/index.html",
+    "main.b29173a9.css.map": "/Dvir-Cohen1/deals-scanner.git/static/css/main.b29173a9.css.map",
+    "main.2206f5d2.js.map": "/Dvir-Cohen1/deals-scanner.git/static/js/main.2206f5d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b29173a9.css",
+    "static/js/main.2206f5d2.js"
+  ]
+}
