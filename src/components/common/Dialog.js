@@ -46,7 +46,7 @@ export default function FullScreenDialog() {
               onClick={handleClose}
               aria-label="close"
             >
-              <CloseIcon />
+              {/* <CloseIcon /> */}
             </IconButton>
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
               Sound
