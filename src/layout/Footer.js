@@ -48,21 +48,21 @@ const isDarkMode = useThemeContext();
       <img
         alt="footer"
         src={logo}
-        className="w-32 sm:mx-auto mb-5"
+        className="w-32 hidden sm:mx-auto mb-5 md:block"
       />
-      <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
+      <ul className="hidden md:flex items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
         {footerNavs.map((item) => (
           <li key={item.id} className=" hover:text-gray-800">
             <a href={item.href}>{item.name}</a>
           </li>
         ))}
       </ul>
-      <div className="mt-8 items-center justify-between sm:flex">
-        <div className="mt-4 sm:mt-0">
+      <div className="md:mt-8 items-center justify-between sm:flex">
+        <div className="md:mt-4 sm:mt-0 text-center md:text-left">
           &copy; 2022 Dvir Cohen DealsScanner All rights reserved.
         </div>
         <div className="mt-6 sm:mt-0">
-          <ul className="flex items-center space-x-4">
+          <ul className="flex justify-center md:justify-start items-center space-x-4">
             <li className="w-10 h-10 border rounded-full flex items-center justify-center">
               <a href="/">
                 <svg

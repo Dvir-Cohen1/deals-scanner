@@ -6,7 +6,7 @@ const navLinks = [
   { path: "/", lable: "Home" },
   { path: "/#Customers", lable: "Customers", icon:"" },
   { path: "/#Contact", lable: "Contact", icon: "" },
-  { path: "/Deals", lable: "Deals", icon: <LocalGroceryStoreIcon /> },
+  { path: "/Deals", lable: "Deals", icon: "" },
   { path: "/#Pricing", lable: "Pricing", icon: "" },
   { path: "/about", lable: "About", icon: "" },
 ];
@@ -15,7 +15,7 @@ const NavLinks = () => {
   const location = useLocation();
 
   return (
-    <div className="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
+    <div className="flex flex-col px-2 mx-0 md:flex-row md:mx-10 md:py-0">
       {navLinks.map((item, index) => {
         return (
           <Link

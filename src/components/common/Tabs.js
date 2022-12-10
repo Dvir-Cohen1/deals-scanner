@@ -1,10 +1,5 @@
 import React from "react";
-import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
-import amazonImg from "../../assets/images/amazon.png";
-import ebay from "../../assets/images/ebay.png";
-import taobao from "../../assets/images/taobao.svg";
-import bestBuyImg from "../../assets/images/bestBuy.png";
-import { Image } from "../../components/index";
+
 
 const tabsItems = [
   { lable: "Amazon", marginX: "", icon:""},
@@ -15,7 +10,7 @@ const tabsItems = [
 const Tabs = () => {
   return (
     <div className="flex items-center justify-end ">
-      <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
+      <div className="hidden md:blockflex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
         {tabsItems.map((item, indexId) => {
           return (
             <button

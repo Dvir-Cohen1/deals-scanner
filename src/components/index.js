@@ -21,11 +21,11 @@ import { HeadingSmall, HeadingMedium, HeadingLarge } from "./common/Heading";
 
 // Products
 import Card from "./common/Card";
-import DealCards from "./products/DealCards";
+import DealCards from "../components/Products/DealCards";
 
-import DealsOfTodayItem from "./products/DealsOfTodayItem";
-import ProductCard from "./products/ProductCard";
-import ProductTable from "./products/ProductTable";
+import DealsOfTodayItem from "../components/Products/DealsOfTodayItem";
+import ProductCard from "../components/Products/ProductCard";
+import ProductTable from "../components/Products/ProductTable";
 
 export {
   HorizontalLine,

@@ -1,10 +1,10 @@
 import React from "react";
-import {styles} from '../../assets/css/style'
+import { styles } from "../../assets/css/style";
 
 function Testimonials() {
   return (
     <section className="bg-white dark:bg-gray-600">
-      <div className="container px-6 py-10 mx-auto">
+      <div className="container px-4 md:px-6 py-5 md:py-10 mx-auto">
         <div className="mt-6 md:flex md:items-center md:justify-between">
           <div>
             <h1 className="text-3xl font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl dark:text-white">
@@ -56,7 +56,9 @@ function Testimonials() {
         </div>
 
         <section className="pb-10 grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-3">
-          <div className={`p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500 ${styles.transitionMoveUp}`}>
+          <div
+            className={`p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500 ${styles.transitionMoveUp}`}
+          >
             <p className="leading-loose text-gray-500 dark:text-gray-400">
               “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
               quibusdam ducimus libero ad tempora doloribus expedita laborum
@@ -82,7 +84,9 @@ function Testimonials() {
             </div>
           </div>
 
-          <div className={`p-8 bg-blue-500 border border-transparent rounded-lg dark:bg-blue-600 ${styles.transitionMoveUp}`}>
+          <div
+            className={`p-8 bg-blue-500 border border-transparent rounded-lg dark:bg-blue-600 ${styles.transitionMoveUp}`}
+          >
             <p className="leading-loose text-white">
               “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
               quibusdam ducimus libero ad tempora doloribus expedita laborum
@@ -106,7 +110,9 @@ function Testimonials() {
             </div>
           </div>
 
-          <div className={`p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500 ${styles.transitionMoveUp}`}>
+          <div
+            className={`p-8 border rounded-lg hover:bg-slate-200 dark:border-gray-700 ease duration-500 ${styles.transitionMoveUp}`}
+          >
             <p className="leading-loose text-gray-500 dark:text-gray-400">
               “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
               quibusdam ducimus libero ad tempora doloribus expedita laborum
@@ -133,7 +139,7 @@ function Testimonials() {
           </div>
         </section>
 
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4 mt-10">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4 my-5 md:my-10">
           <div className="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
             <svg
               className="h-8 text-gray-500 fill-current dark:text-gray-300"

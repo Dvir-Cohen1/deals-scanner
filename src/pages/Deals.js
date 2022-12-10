@@ -1,8 +1,4 @@
-import React, { useContext } from "react";
-
 import amazonImg from "../assets/images/amazon.png";
-import { getAmazonProduct } from "../services/TodayDealsAPI";
-
 import {
   DealCards,
   ProductCard,
@@ -11,8 +7,7 @@ import {
   HeadingLarge,
   Tabs,
   SkeletonLoader,
-  Button,
-  Dialog,
+
 
 } from "../components/index";
 
@@ -21,11 +16,12 @@ import { useDealsContext } from "../context/todayDealsContext";
 const Deals = () => {
   const { products_docs } = useDealsContext();
 
+
   return (
     <PageContainer>
 
       <Image width={70} src={amazonImg} />
-      <div className="columns-2">
+      <div className="columns-1">
         <HeadingLarge>Today's Deals</HeadingLarge>
         <Tabs />
         {/* <button onClick={() => getAmazonCategory()}>Get All Categories</button> */}

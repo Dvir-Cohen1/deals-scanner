@@ -1,7 +1,7 @@
 import React from "react";
 import { useDealsContext } from "../../context/todayDealsContext";
 
-import { Loader, Button, Card } from "../index";
+import { Card } from "../index";
 
 const DealCard = () => {
   const { deal_docs } = useDealsContext();

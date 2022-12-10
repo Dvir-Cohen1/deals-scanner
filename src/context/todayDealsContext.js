@@ -16,16 +16,11 @@ export default function DealsProvider({ children }) {
     async function fetch() {
       const res = await getTodayDeals();
       if (mounted) {
-        setDeals(res);
+        setDeals(prev => prev = res);
       }
       return res
     }
     fetch()
-    // getTodayDeals().then((items) => {
-    //   if (mounted) {
-    //     setDeals(items);
-    //   }
-    // });
 
     return () => (mounted = false);
   }, [deals]);

@@ -66,7 +66,7 @@ const ThemeSwitchButton = () => {
        TransitionComponent={Zoom}
      >
        <FormControlLabel
-         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+         control={<MaterialUISwitch  defaultChecked />}
          label=""
          onChange={handleToggleTheme}
        />
