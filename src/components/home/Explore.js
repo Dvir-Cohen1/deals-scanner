@@ -4,25 +4,25 @@ import Box from "@mui/material/Box";
 
 function Explore() {
   return (
-    <section className="bg-slate-900 dark:bg-gray-900 px-4 md:py-12">
+    <section className="bg-slate-900 dark:bg-gray-100 px-4 md:py-12">
       <div className="container py-10 mx-auto">
         <Box className="mb-5 mx-0 md:float-right" sx={{ "& button": {} }}>
           <Button variant="outlined" size="large">
             <span className="text-blue-500 ">Explore all</span>
           </Button>
         </Box>
-        <h1 className="text-3xl font-semibold text-white-800 capitalize lg:text-4xl dark:text-white">
+        <h1 className="text-3xl font-semibold text-white-800 capitalize lg:text-4xl dark:text-gray-800">
           explore our <br /> awesome{" "}
           <span className="underline decoration-blue-500">Components</span>
         </h1>
 
-        <p className="mt-4 text-slate-400 xl:mt-6 dark:text-gray-300">
+        <p className="mt-4 text-slate-400 xl:mt-6 dark:text-gray-500">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
           voluptatibus
         </p>
 
         <div className="grid grid-cols-1 gap-1 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
-          <div className="space-y-3 rounded-lg p-6 bg-slate-800 highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-blue-500">
+          <div className="space-y-3 rounded-lg p-6 bg-slate-800 dark:bg-white highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-blue-500">
             <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ function Explore() {
               </svg>
             </span>
 
-            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-white">
+            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-slate-600">
               Copy & paste components
             </h1>
 
@@ -70,7 +70,7 @@ function Explore() {
             </a>
           </div>
 
-          <div className="space-y-3 rounded-lg p-6 bg-slate-800 highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-indigo-500">
+          <div className="space-y-3 rounded-lg p-6 bg-slate-800 dark:bg-white highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-indigo-500">
             <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ function Explore() {
               </svg>
             </span>
 
-            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-white">
+            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-slate-600">
               Zero Configrations
             </h1>
 
@@ -118,7 +118,7 @@ function Explore() {
             </a>
           </div>
 
-          <div className="space-y-3 rounded-lg p-6 bg-slate-800 highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-cyan-500">
+          <div className="space-y-3 rounded-lg p-6 bg-slate-800 dark:bg-white highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-cyan-500">
             <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ function Explore() {
               </svg>
             </span>
 
-            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-white">
+            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-slate-600">
               New Components Every month
             </h1>
 
@@ -166,7 +166,7 @@ function Explore() {
             </a>
           </div>
 
-          <div className="space-y-3 rounded-lg p-6 bg-slate-800 highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-orange-500">
+          <div className="space-y-3 rounded-lg p-6 bg-slate-800 dark:bg-white highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-orange-500">
             <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +190,7 @@ function Explore() {
               </svg>
             </span>
 
-            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-white">
+            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-slate-600">
               elegant Dark Mode
             </h1>
 
@@ -220,7 +220,7 @@ function Explore() {
             </a>
           </div>
 
-          <div className="space-y-3 rounded-lg p-6 bg-slate-800 highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-purple-500">
+          <div className="space-y-3 rounded-lg p-6 bg-slate-800 dark:bg-white highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-purple-500">
             <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@ function Explore() {
               </svg>
             </span>
 
-            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-white">
+            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-slate-600">
               Easy to customiztions
             </h1>
 
@@ -268,7 +268,7 @@ function Explore() {
             </a>
           </div>
 
-          <div className="space-y-3 rounded-lg p-6 bg-slate-800 highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-pink-500">
+          <div className="space-y-3 rounded-lg p-6 bg-slate-800 dark:bg-white highlight-white/5 hover:scale-110 hover:bg-slate-800/50 duration-150 hover:border-t-4 hover:border-pink-500">
             <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +286,7 @@ function Explore() {
               </svg>
             </span>
 
-            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-white">
+            <h1 className="text-2xl font-semibold text-slate-400 capitalize dark:text-slate-600">
               Simple & clean designs
             </h1>
 

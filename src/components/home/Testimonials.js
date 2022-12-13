@@ -3,11 +3,11 @@ import { styles } from "../../assets/css/style";
 
 function Testimonials() {
   return (
-    <section className="bg-white dark:bg-gray-600">
+    <section className="bg-white dark:bg-gray-100">
       <div className="container px-4 md:px-6 py-5 md:py-10 mx-auto">
         <div className="mt-6 md:flex md:items-center md:justify-between">
           <div>
-            <h1 className="text-3xl font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl dark:text-white">
+            <h1 className="text-3xl font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">
               What our clients are saying
             </h1>
 

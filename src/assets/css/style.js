@@ -9,6 +9,9 @@ export const styles = {
 
      flexColCenter: "flex flex-col items-center justify-center",
 
+     textPrimaryDark:'text-gray-800',
+     textPrimaryLight:'text-gray-800',
+
      skeletonsBackground: '#0d121f',
    
      paddingX: "sm:px-16 px-6",

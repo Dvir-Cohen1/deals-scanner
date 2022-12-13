@@ -83,13 +83,13 @@ const HeaderAlt = () => {
           }`}
         >
           <div>
-            <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
+            <ul className="flex flex-col-reverse items-center space-x-0 justify-center lg:space-x-6 lg:flex-row">
               <li className="mt-8 mb-8 ml-2 md:ml-0 lg:mt-0 lg:mb-0">
                 <ThemeSwitchButton />
               </li>
               <li className="mt-4 lg:mt-0">
                 <Link
-                  to="/"
+                  to="/login"
                   className="py-3 px-4 text-center border text-gray-600 hover:text-indigo-600 rounded-md block lg:inline lg:border-0"
                 >
                   Login
@@ -97,7 +97,7 @@ const HeaderAlt = () => {
               </li>
               <li className="mt-8 lg:mt-0">
                 <Link
-                  to="/"
+                  to="/login"
                   className="py-3 px-4 text-center text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow block lg:inline"
                 >
                   Sign Up
